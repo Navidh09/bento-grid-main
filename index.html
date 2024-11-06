@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Bento grid</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body>
+    <main class="w-10/12 mx-auto my-10">
+      <div class="grid grid-cols-4 gap-6">
+        <!-- first container done -->
+        <div class="row-span-2 bg-orange-100 rounded-2xl">
+          <div class="flex-col p-6">
+            <p class="font-semibold text-4xl mb-5">
+              <span class="text-black"
+                >Create and schedule <br />content <br
+              /></span>
+              <span class="text-[#8c34eb]">quicker.</span>
+            </p>
+            <div class="mb-8">
+              <img src="./assets/images/illustration-create-post.webp" alt="" />
+            </div>
+          </div>
+        </div>
+        <!-- second container -->
+        <div class="col-span-2 bg-[#8c34eb] rounded-2xl">
+          <div class="flex-col text-center p-7">
+            <p class="text-center text-6xl mb-4 text-white">
+              Social Media <span class="text-orange-300">10x</span> Faster with
+              AI
+            </p>
+            <div class="max-w-48 mx-auto">
+              <img src="./assets/images/illustration-five-stars.webp" alt="" />
+            </div>
+
+            <h5 class="text-white tracking-wider opacity-85">
+              Over 4,000 5-star reviews
+            </h5>
+          </div>
+        </div>
+        <!-- third container -->
+        <div class="row-span-4 bg-[#d0b4ed] rounded-2xl">
+          <div class="overflow-hidden p-6">
+            <h3 class="font-bold text-3xl mb-5">Schedule to social media.</h3>
+            <div class="w-[180%]">
+              <img
+                src="./assets/images/illustration-schedule-posts.webp"
+                alt=""
+              />
+            </div>
+
+            <p class="my-4 font-semibold text-lg">
+              Optimize post timings to publish content at the perfect time for
+              your audience.
+            </p>
+          </div>
+        </div>
+
+        <div>Manage multiple accounts and platforms.</div>
+        <div>Maintain a consistent posting schedule.</div>
+        <div class="row-span-2">Write your content using AI.</div>
+        <div>>56% faster audience growth</div>
+        <div class="col-span-2">Grow followers with non-stop content.</div>
+      </div>
+    </main>
+
+    <footer class="w-11/12 mx-auto text-center mt-32">
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a
+        >. Coded by <a href="#">&copy;Navid Hasan</a>.
+      </div>
+    </footer>
+  </body>
+</html>
